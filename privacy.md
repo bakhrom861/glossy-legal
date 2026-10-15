@@ -14,7 +14,7 @@ If you have a question about this policy, write to [bakhrom86157@icloud.com](mai
 
 - Glossy has no accounts. You do not sign up, and we do not ask for your name, email address or phone number.
 - Your photos and results are stored on your device.
-- A photo leaves your device only when you start a generation, and only to the AI provider that makes the result.
+- A photo leaves your device only when you start a generation: it goes to our server and to the AI provider that makes the result.
 - The app contains no advertising and no third-party analytics or tracking tools.
 - We do not sell your information.
 
@@ -34,17 +34,28 @@ This information stays on your device unless one of the features described below
 
 ### AI generation
 
-When you start a generation, the app sends the data that generation needs to our AI processing provider, kie.ai:
+When you start a generation, the app sends the data that generation needs to our server, which passes it on to our AI processing provider, kie.ai. The key to the AI service is kept on the server, never in the app. The data sent is:
 
 - the photo you chose for it;
 - the text instruction for the chosen template, or the prompt you wrote yourself;
 - for some video templates, a preparatory image made from your photo in an earlier step.
 
-For the AI model to read a photo, the photo is uploaded to a temporary file host operated for the AI provider. Generated photos and videos are also delivered through temporary files on the provider's side. These files are reachable through long, hard-to-guess web addresses that are not published anywhere, and the provider deletes them automatically after a limited time.
+For the AI model to read a photo, the photo is stored on our server and the AI provider downloads it from there. Generated photos and videos are copied from the provider to our server, so the app can show them. These files are reachable through long, hard-to-guess web addresses that are not published anywhere. The AI provider may keep its own temporary copies for a limited time.
 
 The AI provider processes this data on our behalf to return the result. Its own handling of data is described in its privacy policy at [kie.ai](https://kie.ai). We do not use your photos to train AI models.
 
 Photos of your face are personal, and you decide whether to share them. Upload only photos of yourself, or of people who have agreed to it.
+
+### Our server
+
+Our server keeps:
+
+- the photos you upload for a generation, for 24 hours, after which they are deleted automatically;
+- the photos and videos generated for you, for 30 days, after which they are deleted automatically;
+- a random token that identifies your installation of the app, created the first time you start a generation, together with the installation identifier and the internet address it was registered from, to limit abuse. It is not tied to your name, email address or Apple ID;
+- a record of each generation (the AI model used, its status and time), for 30 days, to enforce usage limits.
+
+Server request logs, which include internet addresses, are kept for a short time for troubleshooting.
 
 ### Purchases
 
@@ -66,7 +77,7 @@ Each permission is requested when you first use the feature that needs it. You c
 
 ## How we use information
 
-Information is used only to provide the app's features: generating your photos and videos, keeping your results and credits, and checking your purchases. We do not use it for advertising and do not build profiles of you for third parties.
+Information is used only to provide the app's features: generating your photos and videos, keeping your results and credits, checking your purchases and preventing abuse. We do not use it for advertising and do not build profiles of you for third parties.
 
 ## Sharing
 
@@ -76,9 +87,9 @@ We share information only with the service providers named above, and only as fa
 
 - Data on your device stays there until you delete it. You can delete individual results in the "Mine" tab.
 - Deleting the app removes all data the app stored on the device.
-- Files on the AI provider's temporary file host are deleted automatically by the provider.
+- Uploaded photos are deleted from our server after 24 hours, and results after 30 days. Save the results you want to keep to Photos.
 
-Because the app has no accounts, we hold no copy of your photos or results and cannot look up or restore them.
+Because the app has no accounts, we cannot link the files on our server to you, look them up or restore them. To have them deleted earlier, write to us and include the date of the generation.
 
 ## Children
 
