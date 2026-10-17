@@ -4,7 +4,7 @@ title: Privacy Policy
 
 # Glossy Privacy Policy
 
-Effective date: October 15, 2026
+Effective date: October 17, 2026
 
 Glossy is an iOS app that turns your photo into trend-style AI photos and videos: you pick a template or write your own prompt, add a photo, and the app generates the result. This policy explains what information the app handles, where it goes, and what you can do about it.
 
@@ -34,7 +34,7 @@ This information stays on your device unless one of the features described below
 
 ### AI generation
 
-When you start a generation, the app sends the data that generation needs to our server, which passes it on to our AI processing provider, kie.ai. The key to the AI service is kept on the server, never in the app. The data sent is:
+Before the first generation the app asks for your permission to share your photo with the AI provider; nothing is sent until you agree, and you can decline. When you start a generation, the app sends the data that generation needs to our server, which passes it on to our AI processing provider, kie.ai. The key to the AI service is kept on the server, never in the app. The data sent is:
 
 - the photo you chose for it;
 - the text instruction for the chosen template, or the prompt you wrote yourself;
@@ -42,7 +42,7 @@ When you start a generation, the app sends the data that generation needs to our
 
 For the AI model to read a photo, the photo is stored on our server and the AI provider downloads it from there. Generated photos and videos are copied from the provider to our server, so the app can show them. These files are reachable through long, hard-to-guess web addresses that are not published anywhere. The AI provider may keep its own temporary copies for a limited time.
 
-The AI provider processes this data on our behalf to return the result. Its own handling of data is described in its privacy policy at [kie.ai](https://kie.ai). We do not use your photos to train AI models.
+The AI provider runs image and video models made by Google, ByteDance, Kuaishou (Kling) and MiniMax (Hailuo) and processes this data on our behalf to return the result. Its own handling of data is described in its privacy policy at [kie.ai](https://kie.ai). We do not use your photos to train AI models.
 
 Photos of your face are personal, and you decide whether to share them. Upload only photos of yourself, or of people who have agreed to it.
 
@@ -65,7 +65,7 @@ To check whether your subscription is active and to show prices, the app uses Ad
 
 ### Ratings
 
-If you rate the app with five stars, the app may show Apple's standard review prompt. Reviews you leave there go to Apple and are public on the App Store. Lower ratings and any comment you type stay on your device.
+After your first finished result the app may show Apple's standard review prompt, and the "Rate Glossy" button opens the App Store review page. Ratings and reviews go to Apple and are handled under Apple's terms; the app does not see them.
 
 ## Permissions
 
